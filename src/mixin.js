@@ -58,7 +58,6 @@ export default {
 
     // There is a validator but it isn't injected, mark as reactive.
     if (!requested && this.$validator) {
-      const Vue = this.$options._base; // the vue constructor.
       throw new Error('Must inject validator')
     }
 
